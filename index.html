@@ -515,7 +515,7 @@
               <img src="./assets/leetcode.png" alt="Leetcode icon" class="icon" />
               <br>
               <h3>LeetCode</h3>
-              <p> Solved <b> 80+</b> problems on <br />LeetCode Platform</p>
+              <p> Solved <b> 250+</b> problems on <br />LeetCode Platform</p>
               <br>
               <br>
               <br>
@@ -605,17 +605,18 @@
   <script>
     const swiper = new Swiper('.swiper', {
       direction: 'horizontal',
-      spaceBetween: 24,
+      spaceBetween: 30,
 
-      speed: 400,
-      loop: true,
+      speed: 600,
+      loop: false, // Prevents the wrap-around behavior you mentioned
+      grabCursor: true, // Shows a hand icon for a more interactive feel
       autoplay: {
-        delay: 2000,
+        delay: 4000,
         disableOnInteraction: false
       },
       slidesPerView: 'auto',
-
-      centeredSlides: true,
+      centeredSlides: false, // Keeps the first project on the left
+      initialSlide: 0,
 
       pagination: {
         el: '.swiper-pagination',
